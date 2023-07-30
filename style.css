@@ -1,0 +1,205 @@
+@import url(./color.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--lightsilver);
+  display: grid;
+}
+
+.background-design {
+  position: absolute;
+  z-index:-1 ;
+  width: 100%;
+}
+
+.container {
+  width: 327px;
+  background: #FFF;
+  height: 567px;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  z-index: 1;
+  margin: auto;
+  margin-top: -100px;
+}
+
+.mobile-hero {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.second-container {
+  margin: 20px 24px 32px;
+  display: flex;
+  text-align: center;
+}
+
+.order-h1 {
+  width: 263px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--darkblue);
+  margin-bottom: 16px;
+}
+
+.paragraph {
+  width: 263px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.music-choose-container {
+  width: 279px;
+  height: 81px;
+  border-radius: 11px;
+  background: #F7F9FF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-music {
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.music-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.music-name {
+  font-size: 14px;
+  font-weight: 900;
+  width: 88.662px;
+  color: var(--darkblue);
+}
+
+.price {
+  width: 81px;
+}
+
+.change-button {
+  columns: var(--purple);
+  font-size: 13px;
+  font-weight: 700;
+  height: 30%;
+  border: 0;
+  border-radius: 11px;
+  background-color: #F7F9FF;
+  color: var(--purple);
+  text-decoration: underline;
+  margin-left: 42px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.two-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  row-gap: 24px;
+}
+
+.payment {
+  width: 279px;
+  height: 50px;
+  bottom: var(--purple);
+  border-radius: 11px;
+  background-color: var(--purple);
+  border: 0px;
+  color: white;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  transition: 0.1s;
+}
+
+.cancel {
+  color: var(--grey);
+  border: 0px;
+  font-size: 15px;
+  font-weight: 900;
+  margin-left: 30%;
+  width: 110px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+/* Active Active Active */
+/* Active Active Active */
+/* Active Active Active */
+
+.change-button:active {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+
+.payment:active {
+  background-color: var(--lightpurple);
+}
+
+.cancel:active {
+  color: var(--darkblue);
+}
+
+/* Desktop Size  Desktop Size Desktop Size*/
+/* Desktop Size  Desktop Size Desktop Size*/
+/* Desktop Size  Desktop Size Desktop Size*/
+
+@media (min-width:600px) {
+  .background-design {
+    display: none;
+    
+  }
+
+  .background-design-desktop {
+    position: absolute;
+  }
+
+  .container {
+    width: 450px;
+    height: 630px;    
+    z-index: 1;
+    margin: auto;
+  }
+
+  .second-container {
+    margin: 48px;
+    margin-top: 26px;
+  }
+
+  .order-h1 {
+    margin: auto;
+    margin-bottom: 17px;
+  }
+
+  .paragraph {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 38px;
+  }
+
+  .music-choose-container {
+    width: 354px;
+  }
+
+  .payment {
+    width: 354px;
+  }
+
+  .cancel {
+    margin-left: 120px;
+    margin-bottom: 48px;
+  }
+
+}
